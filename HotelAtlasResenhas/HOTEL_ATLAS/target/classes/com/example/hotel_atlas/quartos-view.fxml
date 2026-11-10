@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox spacing="15.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hotel.HotelController">
+    <padding><Insets bottom="20" left="20" right="20" top="20"/></padding>
+    <Label text="Gerenciamento de Quartos" styleClass="page-title"/>
+    <Label text="Cadastre, edite, remova quartos e gerencie suas fotos. Os dados são salvos automaticamente no computador." styleClass="subtitle" wrapText="true"/>
+    <TableView fx:id="tabelaQuartos" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="colNumero" text="Número" prefWidth="85"/>
+            <TableColumn fx:id="colNome" text="Nome" prefWidth="180"/>
+            <TableColumn fx:id="colDescricao" text="Descrição" prefWidth="260"/>
+            <TableColumn fx:id="colCategoria" text="Categoria" prefWidth="160"/>
+            <TableColumn fx:id="colCapacidade" text="Capacidade" prefWidth="120"/>
+            <TableColumn fx:id="colDiaria" text="Diária (R$)" prefWidth="150"/>
+            <TableColumn fx:id="colQualidade" text="Qualidade" prefWidth="150"/>
+            <TableColumn fx:id="colFoto" text="Foto cadastrada" prefWidth="220"/>
+        </columns>
+    </TableView>
+</VBox>

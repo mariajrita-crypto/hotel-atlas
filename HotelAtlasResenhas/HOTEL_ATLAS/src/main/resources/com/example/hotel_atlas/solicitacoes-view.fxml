@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox spacing="15.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hotel.SolicitacoesController" style="-fx-background-color: #ffffff;">
+    <padding><Insets bottom="20" left="20" right="20" top="20"/></padding>
+    <VBox spacing="5">
+        <Label text="Central de atendimento" styleClass="page-title"/>
+        <Label text="Acompanhe Room Service, lavanderia, transfers, solicitações especiais e mensagens enviadas à recepção." styleClass="subtitle" wrapText="true"/>
+    </VBox>
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Button text="↻ Atualizar" onAction="#recarregar" styleClass="btn-primary"/>
+        <Button text="Atender / responder selecionada" onAction="#atender" styleClass="btn-primary"/>
+    </HBox>
+    <TableView fx:id="tabelaSolicitacoes" VBox.vgrow="ALWAYS" prefHeight="500" columnResizePolicy="CONSTRAINED_RESIZE_POLICY"/>
+    <Label text="As respostas e alterações de status são salvas automaticamente e aparecem na área do hóspede." wrapText="true" styleClass="helper-text"/>
+</VBox>
